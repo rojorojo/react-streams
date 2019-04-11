@@ -1,33 +1,58 @@
-.App {
-  text-align: center;
+body {
+  background-color: #F4F6FC;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+  display: grid;
+  grid-row-gap: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-header {
+  grid-row: 1;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app-content {
+  grid-row: 2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+header {
+  height: 80px;
+  background-color: #fff;
+  padding: 0 24px 0 80px;
+}
+
+.app-logo {
+  width: 102px;
+  height: 28px;
+}
+
+.logo-container {
+  margin-top: 24px;
+}
+
+.nav {
+  flex: 1;
+}
+
+.app-header .ui.menu {
+  margin-top: 0;
+}
+
+@keyframes donut-spin {
+  0% {
+      transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+      transform: rotate(360deg);
   }
+}
+.donut-spinner {
+  display: inline-block;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #5778F3;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: donut-spin 1.2s linear infinite;
 }
