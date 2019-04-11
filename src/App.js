@@ -14,8 +14,8 @@ import StreamList from './components/streams/StreamList';
 class App extends Component {
   render() {
     return (
+      
       <div className="container app-container">
-        
         <Router history={history}>
           <Header />
           <div className="app-content">
@@ -29,7 +29,6 @@ class App extends Component {
           </div>
         </Router>
       </div>
-      
       
     );
   }
